@@ -19,11 +19,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import {
-  Code,
-  Book,
-  PieChart,
   DollarSign,
-  Fingerprint,
   Bell,
   Menu,
   Users,
@@ -36,7 +32,6 @@ import {
   FileText,
   Shield,
   Bus,
-  X,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ChevronDown } from "lucide-react";
