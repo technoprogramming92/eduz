@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
-import SmallTitle from "./small-title";
 import SectionHeader from "./section-header";
 
 const features = [
