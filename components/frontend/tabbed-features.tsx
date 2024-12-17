@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ClipboardList, DollarSign, GraduationCap, Users } from "lucide-react";
 
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   Card,
