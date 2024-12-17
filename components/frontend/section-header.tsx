@@ -1,5 +1,4 @@
 import React from "react";
-import SmallTitle from "./small-title";
 
 export default function SectionHeader({
   title,
@@ -10,7 +9,6 @@ export default function SectionHeader({
 }) {
   return (
     <div className="flex flex-col items-center justify-center space-y-4 text-center">
-      <SmallTitle title="Features" />
       <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
         {title}
       </h2>

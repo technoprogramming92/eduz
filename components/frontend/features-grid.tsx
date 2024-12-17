@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import SectionHeader from "./section-header";
+import SmallTitle from "./small-title";
 
 const features = [
   {
@@ -92,7 +93,8 @@ const features = [
 export default function FeaturesGrid() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-background">
-      <div className="container max-w-6xl mx-auto px-4 md:px-6">
+      <div className="container max-w-6xl mx-auto px-4 md:px-6 text-center">
+        <SmallTitle title="Features" />
         <SectionHeader
           title="All-in-One School Management Platform"
           description="Streamline your entire school operations with our comprehensive suite of integrated modules designed specifically for modern educational institutions."

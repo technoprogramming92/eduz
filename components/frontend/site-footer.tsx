@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
 import Link from "next/link";
-import { GraduationCap } from "lucide-react";
+import Logo from "../logo";
 
 export default function SiteFooter() {
   return (
@@ -10,16 +10,16 @@ export default function SiteFooter() {
       <div className="container px-4 py-16 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Link href={"/"} className="flex items-center space-x-2">
+            {/* <Link href={"/"} className="flex items-center space-x-2">
                 <div className="bg-blue-500 rounded-full p-1">
                   <span className="text-white font-bold text-xl">
                     <GraduationCap />
                   </span>
                 </div>
                 <span className="font-bold text-xl">EduZ</span>
-              </Link>
-            </div>
+              </Link> */}
+            <Logo variant="dark" />
+
             <p className="text-sm text-white/90">
               From admissions to academics, simplify every aspect of school
               administration with our comprehensive and user-friendly platform.
@@ -134,7 +134,7 @@ export default function SiteFooter() {
       <div className="border-t border-white/10">
         <div className="container flex flex-col items-center justify-center gap-4 py-6 text-center text-sm md:h-16 md:flex-row md:py-0">
           <div className="text-white/60">
-            Copyright@2024 All Right Reserved Ignitax.
+            Copyright@{new Date().getFullYear()}. All Right Reserved Ignitax.
           </div>
         </div>
       </div>
