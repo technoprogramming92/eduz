@@ -1,7 +1,5 @@
 import { ErrorPage } from "@/components/frontend/error-page";
 
-ErrorPage;
-
 export default function NotFound() {
   return (
     <>
