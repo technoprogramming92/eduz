@@ -90,7 +90,7 @@ const features = [
 
 export function FeatureTabs() {
   return (
-    <div className="bg-white py-24 sm:py-32">
+    <div className="bg-white mx-auto px-4 py-16 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
         <div className=" sm:text-center">
           <SmallTitle title="Additional Features" />
@@ -133,14 +133,14 @@ export function FeatureTabs() {
                             key={index}
                             className="flex items-center gap-4 rounded-lg border p-4"
                           >
-                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
+                            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[#3B82F6] text-primary-foreground">
                               {index + 1}
                             </div>
                             <div className="flex-1">{subFeature}</div>
                           </div>
                         ))}
                       </div>
-                      <Button asChild className="w-full">
+                      <Button asChild className="w-full bg-[#3B82F6]">
                         <Link href={feature.href}>Learn More</Link>
                       </Button>
                     </div>

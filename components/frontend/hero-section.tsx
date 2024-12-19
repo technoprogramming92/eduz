@@ -17,11 +17,18 @@ export default function HeroSection() {
       </p>
 
       <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-        <Button size="lg" className="h-12 px-6 text-base">
+        <Button
+          size="lg"
+          className="h-12 px-6 text-base bg-blue-500 text-white"
+        >
           Get Started
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
-        <Button size="lg" variant="outline" className="h-12 px-6 text-base">
+        <Button
+          size="lg"
+          variant="outline"
+          className="h-12 px-6 text-base bg-blue-500 text-white"
+        >
           See All features
           <ArrowRight className="ml-2 h-4 w-4" />
         </Button>

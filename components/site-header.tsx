@@ -219,8 +219,12 @@ export default function SiteHeader() {
         </div>
 
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost">Log in</Button>
-          <Button>Sign up</Button>
+          <Button variant="ghost" className="bg-blue-500 text-white">
+            <Link href={"/login"}>Login</Link>
+          </Button>
+          <Button variant="ghost" className="bg-blue-500 text-white">
+            <Link href={"/contact-us"}>Book a Demo</Link>
+          </Button>
         </div>
 
         <Sheet open={open} onOpenChange={setOpen}>
