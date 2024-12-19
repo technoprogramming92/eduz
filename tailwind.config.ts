@@ -1,11 +1,15 @@
 import type { Config } from "tailwindcss";
+import {withUt} from "uploadthing/tw"
 
-export default {
-    darkMode: ["class"],
+
+
+export default withUt({
+	darkMode: ["class"],
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+	"./node_modules/react-tailwindcss-select/dist/index.esm.js"
   ],
   theme: {
   	extend: {
@@ -58,5 +62,5 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/forms")],
+}) satisfies Config;
