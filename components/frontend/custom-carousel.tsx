@@ -4,19 +4,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const carouselItems = [
   {
-    image: "/images/signup.webp",
-    title: "Join Our Network,",
-    subtitle: "Transform Healthcare",
+    image: "/images/school1.webp",
+    title: "Smart School Administration",
+    subtitle: "Simplify school operations with various tools",
   },
   {
-    image: "/images/doctor.webp",
-    title: "Empower Patients,",
-    subtitle: "Anytime, Anywhere",
+    image: "/images/bus1.webp",
+    title: "Streamlined Transport Management",
+    subtitle: "Ensure safe and timely commutes",
   },
   {
-    image: "/images/hero.webp",
-    title: "Advance Your Practice,",
-    subtitle: "With Telemedicine",
+    image: "/images/student1.webp",
+    title: "Efficient Student Management",
+    subtitle: "Seamlessly manage student records",
   },
 ];
 
@@ -39,7 +39,7 @@ export default function CustomCarousel() {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-purple-900 rounded-l-lg overflow-hidden">
+    <div className="relative w-full h-screen bg-orange-400  overflow-hidden">
       <div className="absolute inset-0">
         {carouselItems.map((item, index) => (
           <div
@@ -53,7 +53,7 @@ export default function CustomCarousel() {
               alt={`Slide ${index + 1}`}
               className="object-cover w-full h-full"
             />
-            <div className="absolute inset-0 bg-purple-900/50" />
+            <div className="absolute inset-0 bg-orange-200/50" />
           </div>
         ))}
       </div>
